@@ -1,0 +1,5 @@
+---
+- hosts: tag_Name_balancee_application
+  become: true
+  # roles:
+  #   - nginx

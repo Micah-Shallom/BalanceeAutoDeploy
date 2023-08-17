@@ -1,0 +1,8 @@
+---
+- hosts: tag_Name_RCR_nginx
+- name: nginx assignment
+  import_playbook: ../static-assignments/nginx.yml
+
+- hosts: tag_Name_balancee_application
+- name: application assignment
+  import_playbook: ../static-assignments/application.yml

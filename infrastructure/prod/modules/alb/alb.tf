@@ -102,7 +102,7 @@ resource "aws_lb_target_group" "application-tgt" {
   vpc_id      = var.vpc_id
 }
 
-# For this aspect a single listener was created for the wordpress which is default
+# For this aspect a single listener was created for the application is default
 
 resource "aws_lb_listener" "web-listener" {
   load_balancer_arn = aws_lb.int-alb.arn

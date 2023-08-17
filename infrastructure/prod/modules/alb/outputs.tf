@@ -8,7 +8,7 @@ output "nginx-tgt" {
 }
 
 
-output "wordpress-tgt" {
-  description = "wordpress target group"
+output "application-tgt" {
+  description = "application target group"
   value       = aws_lb_target_group.application-tgt.arn
 }

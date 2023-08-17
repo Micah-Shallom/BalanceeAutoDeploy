@@ -7,16 +7,15 @@ variable "public-sg" {
 variable "public-sbn-1" {
   description = "Public subnets to deploy external ALB"
 }
+
 variable "public-sbn-2" {
   description = "Public subnets to deploy external  ALB"
 }
-
 
 variable "vpc_id" {
   type        = string
   description = "The vpc ID"
 }
-
 
 variable "private-sg" {
   description = "Security group for Internal Load Balance"
@@ -46,12 +45,11 @@ variable "tags" {
   default     = {}
 }
 
-
 variable "name1" {
     type = string
     description = "name of the loadbalancer"
-  
 }
+
 variable "name2" {
     type = string
     description = "name of the loadbalancer"

@@ -1,3 +1,22 @@
+module "AutoScaling" {
+  source            = "./modules/autoscaling"
+  ami-web           = var.ami-web
+  ami-bastion       = var.ami-bastion
+  ami-nginx         = var.ami-nginx
+  desired_capacity  = 1
+  min_size          = 1
+  max_size          = 1
+  web-sg            = [module.security.web-sg]
+  bastion-sg        = [module.security.bastion-sg]
+  nginx-sg          = [module.security.nginx-sg]
+  application-alb-tgt = module.ALB.application-tgt
+  nginx-alb-tgt     = module.ALB.nginx-tgt
+  instance_profile  = module.VPC.instance_profile
+  public_subnets    = [module.VPC.public_subnets-1, module.VPC.public_subnets-2]
+  private_subnets   = [module.VPC.private_subnets-1, module.VPC.private_subnets-2]
+  keypair           = var.keypair
+}
+
 module "ALB" {
   source             = "./modules/alb"
   name1               = "RCR-ext-alb"
