@@ -32,7 +32,7 @@ resource "aws_launch_template" "bastion-launch-template" {
     
     }
 
-  user_data = filebase64("${path.module}/bastion.sh")
+#   user_data = filebase64("${path.module}/bastion.sh")
 }
 
 

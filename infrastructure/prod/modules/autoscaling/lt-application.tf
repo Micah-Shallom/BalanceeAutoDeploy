@@ -31,5 +31,5 @@ resource "aws_launch_template" "application-launch-template" {
   )
   }
 
-  user_data = filebase64("${path.module}/application.sh")
+#   user_data = filebase64("${path.module}/application.sh")
 }
