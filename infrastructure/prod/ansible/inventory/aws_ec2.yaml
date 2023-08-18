@@ -12,9 +12,9 @@ keyed_groups:
 
 filters:
   tag:Name:
-    - RCR-bastion
-    - RCR-nginx
-    - balancee-application
+    # - balance-bastion
+    - balance-nginx
+    # - balancee-application
   instance-state-name : running
   
 hostnames:

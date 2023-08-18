@@ -4,7 +4,7 @@ ami-web = "ami-0452268d5d602bb9e"
 
 ami-bastion = "ami-0a00ed4e3f28ff612"
 
-ami-nginx = "ami-0a0df934ff2015e31"
+ami-nginx = "ami-07f388eb978507f3f"
 
 
 vpc_cidr = "172.16.0.0/16"

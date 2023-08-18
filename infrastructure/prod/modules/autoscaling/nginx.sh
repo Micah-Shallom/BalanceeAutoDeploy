@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~
 sudo yum install -y nginx
 sudo systemctl start nginx
